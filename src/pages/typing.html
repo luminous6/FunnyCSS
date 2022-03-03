@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typing</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
       .wrapper {
         height: 100vh;
         /*This part is important for centering*/
         display: flex;
         align-items: center;
+        background-color: skyblue;
+        color: #7a7a7a;
         justify-content: center;
       }
 
       .typing-demo {
-        width: 15ch;
-        animation: typing 2s steps(15), blink 0.5s step-end infinite alternate;
+        width: 14ch;
+        animation: typing 2s steps(14), blink 0.5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid;
@@ -40,7 +46,7 @@
 
   <body>
     <div class="wrapper">
-      <div class="typing-demo">今晚的月色真美啊!</div>
+      <div class="typing-demo">Nice to meet you!</div>
     </div>
   </body>
 </html>
