@@ -1,3 +1,13 @@
 # FunnyCSS
 
-> 搜集一些有趣的css动画
+> 一些比较有趣的css和js的动画效果
+
+### Navigation
+
+- **loading**
+
+- **typing**
+
+- **typing effect**
+
+
