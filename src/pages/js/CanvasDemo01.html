@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <canvas id="drawing" style="border: 1px solid #ccc"></canvas>
+
+  <script>
+    var canv = document.querySelector('#drawing');
+    canv.width = 500;
+    canv.height = 500;
+    canv.style.backgroundColor = 'green'
+    if (canv.getContext) {
+      var context = canv.getContext('2d');
+
+      context.beginPath();
+      context.fillStyle = 'black';
+      context.arc(100, 100, 100, Math.PI / 2, (Math.PI * 3) / 2);
+      context.fill();
+
+      context.beginPath();
+      context.fillStyle = 'white';
+      context.arc(100, 100, 100, (Math.PI * 3) / 2, Math.PI / 2);
+      context.fill();
+
+      context.beginPath();
+      context.fillStyle = 'black';
+      context.arc(100, 50, 50, (Math.PI * 3) / 2, Math.PI / 2);
+      context.fill();
+
+      context.beginPath();
+      context.fillStyle = 'white';
+      context.arc(100, 150, 50, Math.PI / 2, (Math.PI * 3) / 2);
+      context.fill();
+
+      context.beginPath();
+      context.fillStyle = 'white';
+      context.arc(100, 50, 25, 0, Math.PI * 2);
+      context.fill();
+
+      context.beginPath();
+      context.fillStyle = 'black'
+      context.arc(100, 150, 25, 0, Math.PI * 2)
+      context.fill();
+    }
+
+
+  </script>
+</body>
+
+</html>
